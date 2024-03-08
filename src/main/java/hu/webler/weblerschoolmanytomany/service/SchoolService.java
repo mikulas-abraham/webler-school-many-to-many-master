@@ -24,7 +24,7 @@ public class SchoolService {
     }
 
     public void updateSchool(School school) {
-
+        schoolRepository.save(school);
     }
 
     public void deleteSchool(School school_id) {

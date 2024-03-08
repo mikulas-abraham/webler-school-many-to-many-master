@@ -22,8 +22,8 @@ public class StudentService {
         studentRepository.save(student);
     }
 
-    public void updateStudent() {
-
+    public void updateStudent(Student student) {
+        studentRepository.save(student);
     }
 
     public void deleteStudent(Student student_id) {

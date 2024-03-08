@@ -42,9 +42,9 @@ public class MyController {
         courseService.addCourse(course);
     }
 
-    @PostMapping("/update-course")
+    @PutMapping("/update-course")
     public void updateCourse(@RequestBody Course course) {
-
+        courseService.updateCourse(course);
     }
 
     @PostMapping("/del-course")
@@ -64,9 +64,9 @@ public class MyController {
         schoolService.addSchool(school);
     }
 
-    @PostMapping("/update-school")
+    @PutMapping("/update-school")
     public void updateSchool(@RequestBody  School school) {
-
+        schoolService.updateSchool(school);
     }
 
     @PostMapping("/delete-school")
@@ -85,9 +85,9 @@ public class MyController {
         studentService.addStudent(student);
     }
 
-    @PostMapping("/update-student")
+    @PutMapping("/update-student")
     public void updateStudent(@RequestBody Student student) {
-
+        studentService.updateStudent(student);
     }
 
     @PostMapping("/delete-student")
@@ -106,9 +106,9 @@ public class MyController {
         teacherService.addTeacher(teacher);
     }
 
-    @PostMapping("/update-teacher")
+    @PutMapping("/update-teacher")
     public void updateTeacher(@RequestBody Teacher teacher) {
-
+        teacherService.updateTeacher(teacher);
     }
 
     @PostMapping("/delete-teacher")

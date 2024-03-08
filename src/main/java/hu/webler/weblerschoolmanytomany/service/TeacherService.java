@@ -23,8 +23,8 @@ public class TeacherService {
         teacherRepository.save(teacher);
     }
 
-    public void updateTeacher() {
-
+    public void updateTeacher(Teacher teacher) {
+        teacherRepository.save(teacher);
     }
 
     public void deleteTeacher(Teacher teacher_id) {

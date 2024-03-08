@@ -24,7 +24,7 @@ public class CourseService {
     }
 
     public void updateCourse(Course course) {
-
+        courseRepository.save(course);
     }
 
     public void deleteCourse(Course course_id) {
